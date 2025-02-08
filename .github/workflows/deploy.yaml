@@ -10,6 +10,8 @@ env:
   ECS_CLUSTER: "next-ecs"
   ECS_SERVICE: "next-service3"
   ECR_REPO_SERVER_NAME: "next-ecr"
+  CODE_DEPLOY_APPLICATION: "next-ecs"
+  CODE_DEPLOY_DEPLOYMENT_GROUP: "nextjs-ecs-deploy-group"
   CLOUD_FRONT_ID: "EWJA3CIE3HHNZ"
 
 jobs:
@@ -56,6 +58,8 @@ jobs:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
+          codedeploy-application: ${{ env.CODE_DEPLOY_APPLICATION }}
+          codedeploy-deployment-group: ${{ env.CODE_DEPLOY_DEPLOYMENT_GROUP }}
           wait-for-service-stability: true
 
       - name: Create Cloudfront Invalidation
