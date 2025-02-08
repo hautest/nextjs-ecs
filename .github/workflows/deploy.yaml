@@ -10,7 +10,7 @@ env:
   ECS_CLUSTER: "next-ecs"
   ECS_SERVICE: "next-service3"
   ECR_REPO_SERVER_NAME: "next-ecr"
-  CODE_DEPLOY_APPLICATION: "next-ecs"
+  CODE_DEPLOY_APPLICATION: "nextjs-ecs"
   CODE_DEPLOY_DEPLOYMENT_GROUP: "nextjs-ecs-deploy-group"
   CLOUD_FRONT_ID: "EWJA3CIE3HHNZ"
 
