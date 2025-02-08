@@ -8,6 +8,7 @@ on:
 env:
   ECS_CONTAINER: "next-ecs-cont1"
   CLOUD_FRONT_ID: "EWJA3CIE3HHNZ"
+  ECR_REPO_SERVER_NAME: "next-ecr"
 
 jobs:
   deploy:
