@@ -7,7 +7,7 @@
         "Properties": {
           "TaskDefinition": "{taskDefinition-version}",
           "LoadBalancerInfo": {
-            "ContainerName": "{ContainerName}",
+            "ContainerName": "next-ecs-cont1",
             "ContainerPort": 3000
           },
           "PlatformVersion": "LATEST"
